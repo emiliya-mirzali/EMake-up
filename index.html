@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMake-Up</title>
+    <link rel="icon" href="./images/icon.jpeg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div id="heading">
+            <img id="logo" src="./images/logo.jpeg" alt="logo">
+            <div id="elements2">
+                <ul id="elements">
+                    <li><a class="nav-link" href="#" onclick="showPage('mainPage')">
+                            <p class="element">Home page</p>
+                        </a></li>
+                    <li><a class="nav-link" href="#" onclick="showPage('basketPage')">
+                            <p class="element">Basket</p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="mainPage">
+        <div id="img-dots">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img id="post" src="./images/post0.jpeg" alt="post1">
+                </div>
+                <div class="mySlides fade">
+                    <img id="post" src="./images/post1.jpeg" alt="post2">
+                </div>
+                <div class="mySlides fade">
+                    <img id="post" src="./images/post2.jpeg" alt="post3">
+                </div>
+                <div class="mySlides fade">
+                    <img id="post" src="./images/post3.jpeg" alt="post4">
+                </div>
+                <div class="mySlides fade">
+                    <img id="post" src="./images/post4.jpeg" alt="post5">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div id="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+        <div id="apiResponse"></div>
+        <div id="total-indicator" onclick="showPage('basketPage')">$0.00</div>
+        <footer>
+            <div id="footer">
+                <h3>EMake-up</h3>
+                <p id="slogan">Beauty is everyone's right</p>
+                <br />
+                <p id="contacts"><b>Contacts:</b><br />E-mail: emiliyamirza24@gmail.com<br />Phone: +994557118118</p>
+                <br />
+                <p id="little-text">2023</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="basketPage" style="display: none;">
+        <div id="bask-elements">
+            <h1 id="my-bask">My Basket</h1>
+            <div id="fav-products"></div>
+            <p id="total"><b>Total: $0.00</b></p>
+        </div>
+        <footer>
+            <div id="footer">
+                <h3>EMake-up</h3>
+                <p id="slogan">Beauty is everyone's right</p>
+                <br />
+                <p id="contacts"><b>Contacts:</b><br />E-mail: emiliyamirza24@gmail.com<br />Phone: +994557118118</p>
+                <br />
+                <p id="little-text">2023</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
